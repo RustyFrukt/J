@@ -5,8 +5,6 @@ import java.util.List;
 
 /*
 1.	Напишите программу, которая использует Stream API для обработки списка чисел.
-Программа должна вывести на экран среднее значение всех четных чисел в списке.1.
-Напишите программу, которая использует Stream API для обработки списка чисел.
 Программа должна вывести на экран среднее значение всех четных чисел в списке.
  */
 public class NumbersSelector {
@@ -25,23 +23,5 @@ public class NumbersSelector {
         // Посчитаем сумму всех четных чисел массива и разделим ее на количество слагаемых
         int average = evenNumbers.stream().mapToInt(i -> i).sum() / evenNumbers.size();
         System.out.println("\nСреднее значение четных чисел: " + average);
-
-
-        // Выделим из массива четные числа
-//        List<Integer> evenNumbers = new ArrayList<>();
-//        for (Integer number : numbers) {
-//            if (number % 2 == 0) {
-//                evenNumbers.add(number);
-//            }
-//        }
-//        System.out.println("\nСписок четных чисел:   " + evenNumbers);
-
-
-        // Посчитаем сумму всех четных чисел массива и разделим ее на количество слагаемых
-//        int sum = 0;
-//        for (Integer number : evenNumbers) {
-//            sum = number + sum;
-//        }
-//        System.out.println("\nСреднее значение четных чисел: " + sum / evenNumbers.size());
     }
 }
